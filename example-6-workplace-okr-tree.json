@@ -1,0 +1,54 @@
+{
+  "source_anchor": "OKR 目标拆解：公司级 Objective → 部门级 Key Results → 个人级 Tasks。目标从顶层拆到可执行任务，树状分支。",
+  "reader_takeaway": "公司目标通过 OKR 体系层层拆解为可执行的个人任务",
+  "domain": "企业管理 / Enterprise Management",
+  "mood": "clear, structured, actionable",
+  "intent": {
+    "audience": "团队管理者、企业管理顾问、产品经理",
+    "feeling": "目标拆解有逻辑——从战略到执行一条线",
+    "author_stance": "OKR 不是简单的任务列表，而是树状目标拆解体系",
+    "one_sentence": "公司目标通过 OKR 体系拆解为部门关键结果和个人任务"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["公司O", "部门KR", "个人任务", "OKR"],
+    "outside_image": ["具体 OKR 示例、评分方法"]
+  },
+  "truth_constraints": [
+    "标签必须用中文",
+    "树状结构必须从上到下展开",
+    "根节点在公司O，叶子节点在个人任务"
+  ],
+  "relationship": {
+    "type": "tree / fan-out / 树状拆解",
+    "direction": "top-to-bottom: root → branches → leaves"
+  },
+  "worker": {
+    "family": "Mapper / 测绘员",
+    "action": "tracing and soldering a branch from root to a department node",
+    "touch_point": "soldering iron on trace between root and first branch"
+  },
+  "metaphor_world": "mainboard with tree topology — root chip at top center, traces branching down to 2-3 department nodes, each branching to 2-3 task nodes at bottom",
+  "composition_mode": "single dense image",
+  "labels": ["公司O", "部门KR", "个人任务", "OKR"],
+  "qa_risks": [
+    "tree 结构可能塌缩为线性 pipeline",
+    "中文标签可能只渲染一部分",
+    "worker 可能丢失",
+    "Swap Test: 可能太通用，需要 'OKR' nameplate 锁定语境"
+  ],
+  "final_prompt": "A small soldering-cap robot with a round silver soldering-iron cap head, rectangular green PCB body, and tiny jointed arms is physically soldering a trace between a root chip and a branch chip below it. The robot is the main focal point, positioned at the upper center of the scene. The robot's LED has one focused amber dot.\n\nBelow the robot, a green mainboard has a tree topology layout. At the top center, one large root chip labeled '公司O' with a blue LED. From this root, copper-gold traces branch downward to two medium-sized department chips labeled '部门KR', each with a green LED. From each department chip, two more traces branch further downward to small task nodes labeled '个人任务', each with a small amber LED. The tree structure is clearly visible as a branching hierarchy from top to bottom: one root, two branches, four leaves. A small copper nameplate reads 'OKR'.\n\nMandatory Chinese labels as readable silkscreen prints: '公司O' on the root chip, '部门KR' on the two department chips, '个人任务' on the four task nodes, 'OKR' on the nameplate. All labels must be clearly visible and readable. The board surface is green solder-mask with gold-copper traces, silver solder joints, raised 3D components throughout. Tactile solder texture, copper sheen, clean editorial composition, generous margins. No flat schematic, no cartoon eyes, no humanoid face, no mascot sticker, no fake dense text, no stock PPT icons. Editorial, tactile, publish-grade, 16:9 horizontal.",
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-6-workplace-okr-tree.png",
+  "auto_qa": {
+    "channel": "fast",
+    "qa_prompt": "VLM checks: worker_action, pcb_texture, chinese_labels (公司O, 部门KR, 个人任务, OKR), focal_hierarchy, swap_test (locked to OKR context via nameplate), custom_check (tree topology: 1 root → 2 branches → 4 leaves)",
+    "attempt_1": {
+      "result": "PASS",
+      "all_checks_passed": true,
+      "note": "Tree relationship not in fast channel standard list (pipeline/feedback/hierarchy/contrast) but passed on first attempt — fast channel template is robust enough for tree-like hierarchies"
+    },
+    "final_verdict": "PASS"
+  }
+}

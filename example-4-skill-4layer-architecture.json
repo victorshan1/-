@@ -1,0 +1,115 @@
+{
+  "source_anchor": "Skills 4层架构：① 方法层（流程/最佳实践/验收标准）→ ② 连接层（MCP/CLI/API/SDK/本地脚本/浏览器自动化）→ ③ 协同层（Subagents/Hooks/知识库）→ ④ 风险控制层（权限系统/高风险动作确认）。金句：Skills不是万能插件，而是自动化任务的操作说明书。",
+  "reader_takeaway": "Skill 不是简单提示词，而是从方法到风险控制的 4 层堆叠体系工程",
+  "domain": "AI Agent / Skill Engineering",
+  "mood": "clear, architectural, authoritative",
+  "intent": {
+    "audience": "AI Agent 开发者、FDE 工程师、Skill 作者",
+    "feeling": "层次清晰——原来 Skill 是有架构的体系工程",
+    "author_stance": "倍鸣主张 Skill 是 4 层架构的系统工程，不是单点提示词",
+    "one_sentence": "Skill 从方法到风险控制，4 层堆叠构成完整体系"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["方法层", "连接层", "协同层", "风险控制层"],
+    "outside_image": ["每层详细说明、具体工具列表"]
+  },
+  "truth_constraints": [
+    "标签必须用中文",
+    "4层必须从下到上排列：方法→连接→协同→风险控制",
+    "每层之间必须有物理连接（header pin / 焊点）",
+    "worker 必须在物理接触最顶层的板子"
+  ],
+  "relationship": {
+    "type": "layered hierarchy / 分层堆叠",
+    "direction": "bottom-to-top: 底层方法支撑顶层风险控制",
+    "condition": "每层依赖下层提供的能力，移除下层则上层失效"
+  },
+  "core_action": "physically placing the top layer (风险控制层) onto the stack, soldering the header pins connecting layer 3 and layer 4",
+  "worker_decision": {
+    "family": "Builder / 装配工",
+    "action_verb": "placing and soldering",
+    "what_breaks_if_removed": "no one assembles the stack; layers are disconnected boards with no architecture",
+    "led_state": "single focused amber dot (building/concentrating)"
+  },
+  "metaphor_world": {
+    "chosen": "PCB Shield Stack (Arduino-style stacked shields)",
+    "divergence": [
+      {
+        "direction": "PCB Shield Stack",
+        "scene": "4 boards stacked vertically with header pin connectors, worker soldering top layer pins",
+        "why_fits": "shield stacking is literally layered architecture; each board sits on the one below, connected by header pins",
+        "score": "best fit — precise, clear, fresh"
+      },
+      {
+        "direction": "Vertical Backplane with cards",
+        "scene": "vertical backplane board, 4 cards inserted horizontally at different heights",
+        "why_fits": "backplane architecture is layered",
+        "score": "good but cards are side-by-side, less 'stacking' feel"
+      },
+      {
+        "direction": "Power Supply Unit stages",
+        "scene": "transformer → regulator → filter → protection, stacked vertically",
+        "why_fits": "PSU has natural layering, risk control = surge protector",
+        "score": "too domain-specific (power electronics), less recognizable"
+      },
+      {
+        "direction": "Clock Distribution Tree",
+        "scene": "crystal → PLL → buffer → branches",
+        "why_fits": "clock trees are hierarchical",
+        "score": "doesn't express risk control well"
+      }
+    ],
+    "why_beats_default": "3 existing examples all use horizontal mainboard; shield stack is vertical, visually distinct, and the stacking metaphor perfectly renders the 4-layer hierarchy. Server rack (ex3) is already used; shield stack is a different vertical world."
+  },
+  "composition_mode": "single dense image — 4 layers in one board stack",
+  "primitives": {
+    "boards": "4 stacked PCBs at different heights, each with distinct components",
+    "header_pins": "silver header pin strips connecting layers vertically",
+    "layer_1_bottom": "green PCB, labeled '方法层', with small process-flow traces and a green LED (stable foundation)",
+    "layer_2": "green PCB, labeled '连接层', with prominent copper-gold traces and connector ports (MCP/CLI/API represented as different connector shapes)",
+    "layer_3": "green PCB, labeled '协同层', with multiple small sub-agent nodes and amber LED (coordination activity)",
+    "layer_4_top": "green PCB, labeled '风险控制层', with red LED, lock/shield icon traces, and warning indicators",
+    "worker": "soldering-cap robot, placing the top board onto the stack, soldering iron touching header pins between layer 3 and 4",
+    "solder_joints": "silver solder joints at each header pin connection point"
+  },
+  "state_coding": {
+    "layer_1_led": "green — stable foundation",
+    "layer_2_led": "no LED, copper-gold traces glow — connection activity",
+    "layer_3_led": "amber — coordination activity",
+    "layer_4_led": "red — risk monitoring / alert state",
+    "worker_led": "single amber dot — focused building state"
+  },
+  "labels": ["方法层", "连接层", "协同层", "风险控制层"],
+  "qa_risks": [
+    "中文标签可能渲染失败或模糊",
+    "4层堆叠可能塌缩为平面图像（丢失纵向层次感）",
+    "worker可能变成装饰而非执行装配动作",
+    "Swap Test: 如果这张图可以用来配任何'4层架构'文章，则FAIL——必须锁定到 Skill 方法论这个特定语境"
+  ],
+  "final_prompt": "A small soldering-cap robot with a round silver soldering-iron cap head, rectangular green PCB body, and tiny jointed arms is physically pressing a circuit board down onto a stack with one hand while holding a soldering iron touching the header pins with the other. The robot is the main focal point, positioned at the top right of the scene, clearly visible and detailed. The robot's LED has one focused amber dot. Below the robot, four green circuit boards are stacked vertically like Arduino shields, connected by silver header pin strips at the corners. Bottom board has small process-flow traces forming a mini flowchart pattern and a green LED. Second board has prominent copper-gold traces and three distinct connector port shapes (USB-style, pin-header row, edge-card gold finger representing MCP/CLI/API). Third board has three small sub-agent node chips arranged in a triangle, each with a tiny amber LED. Top board has a red LED, a padlock-shaped copper trace pattern, and two small warning flag indicators. A small copper nameplate reads 'Skill'. Mandatory Chinese labels as readable silkscreen prints: '方法层' on bottom, '连接层' on second, '协同层' on third, '风险控制层' on top. Tactile solder texture, copper sheen, 3D raised components. No flat schematic, no cartoon eyes, no humanoid face, no mascot. Editorial, publish-grade, 16:9.",
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-4-skill-4layer-architecture.png",
+  "auto_qa": {
+    "qa_prompt": "VLM checks: worker_action, pcb_texture, chinese_labels, focal_hierarchy, swap_test, custom_check (vertical stacking)",
+    "attempt_1": {
+      "result": "FAIL",
+      "failing_checks": ["swap_test — image too generic, could illustrate any 4-layer architecture"],
+      "passing_checks": ["worker_action", "pcb_texture", "chinese_labels", "focal_hierarchy", "custom_check"],
+      "adjustments": "Added Skill-specific visual anchors: process-flow mini-diagram on 方法层, MCP/CLI/API connector port shapes on 连接层, sub-agent triangle on 协同层, padlock pattern on 风险控制层, 'Skill' nameplate"
+    },
+    "attempt_2": {
+      "result": "FAIL",
+      "failing_checks": ["worker_action — robot disappeared", "chinese_labels — only 2 of 4 labels rendered"],
+      "passing_checks": ["pcb_texture", "focal_hierarchy", "swap_test", "custom_check"],
+      "adjustments": "Moved worker to front of prompt (first paragraph), put mandatory label list at end of prompt in explicit block, simplified per-layer detail slightly to leave room"
+    },
+    "attempt_3": {
+      "result": "PASS",
+      "all_checks_passed": ["worker_action", "pcb_texture", "chinese_labels", "focal_hierarchy", "swap_test", "custom_check"],
+      "adjustments": "Worker-first prompt structure + explicit label block at end = all elements rendered correctly"
+    },
+    "final_verdict": "PASS"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "source_anchor": "Graph Engineering 不是发明的，是大家撞墙撞出来的。三个角色：命名者（2026年7月初技术博客首发）、引爆者（2026年7月中社交媒体引爆讨论，浏览量百万级）、奠基者（主流图编排框架，2023年推出，月下载量千万级）。三者汇聚为 Graph Engineering 共识，核心技术三要素：节点+边+状态。警示：有虚假论文。",
+  "reader_takeaway": "Graph Engineering 是三个角色接力汇聚的工程共识，不是某人的发明",
+  "domain": "AI Agent / Graph Engineering",
+  "mood": "clear, informative, slightly cautionary",
+  "intent": {
+    "audience": "AI Agent 开发者、技术管理者",
+    "feeling": "原来这个词不是谁发明的，是行业集体撞墙撞出来的",
+    "author_stance": "客观梳理，不盲从造词，也不否认实践价值",
+    "one_sentence": "三个角色（命名/引爆/奠基）汇聚成 Graph Engineering 共识，核心是节点+边+状态"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["命名者", "引爆者", "奠基者", "Graph Engineering", "节点", "边", "状态"],
+    "outside_image": ["具体日期、下载量、人物全名、公司全名、平台名称"]
+  },
+  "truth_constraints": [
+    "标签必须用中文（Graph Engineering 保留英文）",
+    "三个来源在左，汇聚到中间，三要素在右",
+    "红色警示LED在角落"
+  ],
+  "relationship": {
+    "type": "convergence / 三路汇聚",
+    "direction": "left (3 sources) → center (1 convergence) → right (3 outputs)"
+  },
+  "worker": {
+    "family": "Bridge Builder / 桥接工",
+    "action": "soldering the convergence junction where three traces meet",
+    "touch_point": "soldering iron on the junction point of three traces"
+  },
+  "metaphor_world": {
+    "chosen": "signal multiplexer / 信号汇聚器",
+    "why": "三路信号汇聚到一个处理器再分出三路输出，天然表达 convergence 关系，区别于 pipeline（单向）和 tree（单根分支）"
+  },
+  "qa_risks": [
+    "7个标签可能太多，模型可能丢标签（F3/F7）",
+    "汇聚结构可能被画成简单 pipeline",
+    "Swap Test: 需要 nameplate 锁定 Graph Engineering 语境"
+  ],
+  "final_prompt": "A small soldering-cap robot with a round silver soldering-iron cap head, rectangular green PCB body, and tiny jointed arms is physically soldering the junction point where three copper traces converge into a large central processor chip. The robot is the main focal point. The robot's LED has one focused amber dot.\n\nOn the left side, three small source boards are stacked vertically, each sending a colored trace rightward to the central chip: top board with a green trace and small document icon, middle board with an amber trace and small broadcast antenna icon, bottom board with a copper-gold trace and small framework stack icon. All three traces converge at a large central processor chip with a bright cyan LED. From the central chip, three short traces go rightward to three small indicator nodes, each with a different colored LED: green, amber, and cyan. A small red warning LED with a tiny warning flag sits at the bottom-right corner.\n\nA small copper nameplate reads 'Graph Engineering'. Mandatory Chinese labels as readable silkscreen prints: '命名者' on the top-left source board, '引爆者' on the middle-left source board, '奠基者' on the bottom-left source board, 'Graph Engineering' on the central processor chip, '节点' on the top-right indicator node, '边' on the middle-right indicator node, '状态' on the bottom-right indicator node. Each label appears ONLY ONCE. Do NOT render labels as background text. Do NOT repeat labels. The board surface is green solder-mask with gold-copper traces, silver solder joints, raised 3D components throughout. Tactile solder texture, copper sheen, clean editorial composition, generous margins. No flat schematic, no cartoon eyes, no humanoid face, no mascot sticker, no fake dense text, no stock PPT icons. Editorial, tactile, publish-grade, 16:9 horizontal.",
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-8-graph-engineering-convergence.png",
+  "auto_qa": {
+    "channel": "fast",
+    "qa_prompt": "VLM checks: worker_action, pcb_texture, chinese_labels (7 labels), focal_hierarchy, swap_test, custom_check (convergence pattern), text_overload",
+    "attempt_1": {
+      "result": "PASS",
+      "all_checks_passed": true,
+      "note": "7 labels rendered correctly on first attempt — fast channel template handles complex convergence patterns with many labels. The 'ONLY ONCE' constraint from F8 fix prevented label duplication."
+    },
+    "final_verdict": "PASS"
+  }
+}

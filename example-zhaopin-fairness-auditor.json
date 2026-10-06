@@ -1,0 +1,39 @@
+{
+  "source_anchor": "招聘公平审计官项目结构：根节点分4条分支（方案文档/分析引擎/Demo数据/搭建指南），分析引擎下3个Python脚本其中fairness_auditor.py是核心，Demo数据下3套CSV其中stereotype场景最劲爆。",
+  "reader_takeaway": "项目有4大模块，分析引擎是核心，Demo数据有3套场景",
+  "domain": "软件工程 / AI应用",
+  "mood": "clear, structured, professional",
+  "intent": {
+    "audience": "开发者、项目评审者",
+    "feeling": "项目结构一目了然——核心在哪里、数据从哪来",
+    "author_stance": "这不是松散的文件集合，而是有核心引擎+数据管道的结构化项目",
+    "one_sentence": "招聘公平审计官项目以分析引擎为核心，连接方案文档和Demo数据两大模块"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["招聘公平审计官", "方案文档", "分析引擎", "Demo数据", "搭建指南", "核心"],
+    "outside_image": ["具体脚本代码、CSV数据内容"]
+  },
+  "truth_constraints": [
+    "标签必须用中文",
+    "4条分支从中心向外展开",
+    "核心脚本用琥珀色高亮"
+  ],
+  "relationship": {
+    "type": "tree / fan-out",
+    "direction": "center outward: root → 4 branches",
+    "what_breaks_if_removed": "去掉分析引擎分支，整个项目就没有核心了"
+  },
+  "worker": {
+    "family": "Router",
+    "action": "routing copper traces from a central hub chip to 4 sub-board quadrants",
+    "worker_tool": "signal probe in each hand"
+  },
+  "composition_mode": "single-beat",
+  "metaphor_world": "mainboard",
+  "final_prompt": "A small soldering-cap robot is routing copper traces from a central hub chip outward to four sub-board quadrants on a large green PCB. The robot has a round silver cap head with a single small amber LED indicator, a tiny green PCB body, and small jointed arms holding signal probes. No eyes, no face, no humanoid expression. The robot stands at the center, actively touching the hub chip with both hands. It is actively working, NOT standing or leaning.\n\nThe PCB surface is green solder-mask with gold-copper traces, silver solder joints, and visible 3D depth. A large central black hub chip sits in the middle. Four copper traces fan outward from the hub to four quadrant sub-boards: top-left, top-right, bottom-left, bottom-right. Each sub-board is a small green rectangle with tiny chips on it. The top-right sub-board has three small chip rectangles in a row, with the center one highlighted with warm amber accent. The bottom-right sub-board also has three small chip rectangles, with one highlighted with a red LED indicator. The focal point is the central hub chip with the robot. Quiet zones around the outer edges.\n\nA copper nameplate on the board reads '招聘公平审计官'.\n\nMandatory Chinese labels, each silkscreen-printed on its component:\n- 招聘公平审计官 on the central hub nameplate\n- 方案文档 on the top-left sub-board\n- 分析引擎 on the top-right sub-board\n- Demo数据 on the bottom-right sub-board\n- 搭建指南 on the bottom-left sub-board\n- 核心 on the amber-highlighted center chip in the top-right sub-board\n\nEach label appears ONLY ONCE. Do NOT render as background text.\n\nClean editorial composition, generous margins. No flat schematic, no cartoon eyes, no humanoid face, no mascot sticker, no fake dense text, no stock PPT icons. Editorial, tactile, publish-grade, 16:9 horizontal.",
+  "qa_risks": ["chinese_labels: all 6 labels visible and attached to components", "swap_test: image locked to 招聘公平审计官 project structure via nameplate"],
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-zhaopin-fairness-auditor.png"
+}

@@ -1,0 +1,76 @@
+{
+ "platform_profile": "default | constrained — constrained 用于宿主图像工具对英文主体提示词报网关错误的环境（v2.6.2）",
+ "source_anchor": "在此填入要图示的文章原文/概念句子",
+ "reader_takeaway": "读者应该在3秒内理解什么",
+ "domain": "AI/ML | engineering | business | education | ...",
+ "mood": "confident | critical | playful | neutral | ...",
+ "intent": {
+  "audience": "目标读者画像",
+  "feeling": "期望读者感受",
+  "author_stance": "作者立场",
+  "one_sentence": "本文核心论点的一句话概括"
+ },
+ "asset_role": "article figure | story card | data scene | center illustration | explainer",
+ "container": "article body | slide | social card | README",
+ "ratio": "16:9 (default)",
+ "text_ownership": {
+  "inside_image": [
+   "短标签1",
+   "短标签2"
+  ],
+  "outside_image": [
+   "标题",
+   "说明段"
+  ]
+ },
+ "truth_constraints": [
+  "如有精确数值/名称必须原样出现，不能编造"
+ ],
+ "relationship": {
+  "type": "connection | sequence | dependency | feedback | comparison | contrast | causality | transformation | tension | threshold | divergence",
+  "direction": "A→B | A↔B | loop | ...",
+  "focal_module": "哪个组件是视觉焦点"
+ },
+ "core_action": "worker 在做什么物理动作（route/sense/switch/encode/debug/shield/...）",
+ "worker_decision": {
+  "use_worker": true,
+  "what_breaks_if_removed": "去掉 worker 后图意会损失什么",
+  "worker_family": "Router | Sensor | Switcher | Encoder | Debugger | Shield | ...",
+  "worker_tool": "worker 手持的领域工具",
+  "eval_constraint": "如评测点指定了worker类别，必须在此记录原话。若语义贴近但名称不同，补充选择理由。留空表示无外部约束。"
+ },
+ "metaphor_world": "mainboard | breadboard | server rack | AI training board | sensor board | ...",
+ "composition_mode": "single-beat | multi-beat-single-image | series",
+ "primitives": [
+  "Copper Trace",
+  "Bus Bar",
+  "Relay",
+  "LED Array",
+  "..."
+ ],
+ "state_coding": {
+  "colors": [
+   "PCB Green",
+   "Copper Gold",
+   "Signal Amber",
+   "Power Green"
+  ],
+  "focal_accent": "Signal Amber",
+  "led_states": [
+   "dim",
+   "lit",
+   "flashing"
+  ]
+ },
+ "labels": [
+  {
+   "text": "标签文字",
+   "attachment": "silkscreen | pin label | trace tag | ..."
+  }
+ ],
+ "final_prompt": "在此填入完整的最终生成提示词（英文为主，可含中文标签说明）",
+ "qa_risks": [
+  "可能出现的质量问题，如 fake text、decorative worker 等"
+ ],
+ "output_path": "./output.png"
+}

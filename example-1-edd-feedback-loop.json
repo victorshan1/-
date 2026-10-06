@@ -1,0 +1,58 @@
+{
+  "source_anchor": "EDD 与模型训练的类比：训练数据→用户任务/生产案例/失败案例；目标函数→评估指标/发布门禁；参数更新→改模型/prompt/RAG/工具/流程；数据飞轮→使用智能体带来的数据飞轮",
+  "reader_takeaway": "AI应用开发循环本质上是模型训练循环，评测指标就是loss函数",
+  "domain": "AI/ML",
+  "mood": "confident, analytical",
+  "intent": {
+    "audience": "AI应用开发者、技术管理者",
+    "feeling": "恍然大悟——原来AI应用开发不是传统软件工程",
+    "author_stance": "Derrick主张AI应用开发应模仿模型训练而非传统软件工程",
+    "one_sentence": "EDD的每个环节都对应模型训练的一个概念，理解这个类比就理解了EDD"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["训练数据", "评估指标", "参数更新", "数据飞轮", "过拟合"],
+    "outside_image": ["EDD概念详细说明"]
+  },
+  "truth_constraints": [
+    "标签必须用中文",
+    "飞轮方向必须是闭环（用户数据→评测→迭代→更好的体验→更多用户→更多数据）"
+  ],
+  "relationship": {
+    "type": "feedback",
+    "direction": "loop: 用户数据 → 评测 → 改系统 → 发布 → 更多用户数据",
+    "focal_module": "评测模块（评估指标+发布门禁）"
+  },
+  "core_action": "encode（编码：把用户行为编码为评测指标）",
+  "worker_decision": {
+    "use_worker": true,
+    "what_breaks_if_removed": "没有人执行'把用户数据编码成评测指标'这个动作，飞轮就断了",
+    "worker_family": "Encoder / 编码工",
+    "worker_tool": "signal probe + LED encoder array"
+  },
+  "metaphor_world": "AI training board with loss curve display, weight matrix trays, gradient probes",
+  "composition_mode": "single-beat with feedback loop",
+  "primitives": ["Copper Trace (carrier, forms the loop)", "LED Array (评估指标显示)", "Relay (发布门禁)", "Feedback Loop Trace"],
+  "state_coding": {
+    "colors": ["PCB Green (base)", "Copper Gold (traces)", "Signal Amber (focal: 评测指标)", "Growth Cyan (飞轮激活)"],
+    "focal_accent": "Signal Amber on 评估指标LED",
+    "led_states": ["dim (未启动)", "lit amber (评测中)", "flashing cyan (飞轮转动)"]
+  },
+  "labels": [
+    { "text": "训练数据", "attachment": "silkscreen on input chip" },
+    { "text": "评估指标", "attachment": "pin label on LED array" },
+    { "text": "发布门禁", "attachment": "trace tag on relay" },
+    { "text": "参数更新", "attachment": "chip marking on tuning module" },
+    { "text": "数据飞轮", "attachment": "status badge on loop trace" },
+    { "text": "过拟合", "attachment": "error flag on side path" }
+  ],
+  "final_prompt": "Generate one standalone 16:9 horizontal article illustration in the Circuit Workers style. A miniature PCB diorama seen from a high angle. The scene shows a feedback loop on an AI training circuit board. A small soldering-cap robot worker (round silver head, green PCB body, tiny arms) is physically encoding signals — it holds a signal probe connected to an LED array display, converting raw input signals into lit amber LEDs. The copper carrier trace forms a visible loop: starting from an input chip labeled '训练数据', flowing through the LED array labeled '评估指标', passing a relay module labeled '发布门禁', reaching a tuning chip labeled '参数更新', and looping back via a cyan-glowing feedback trace labeled '数据飞轮'. Near the loop, a small side-path with a dim red LED and a tiny warning flag labeled '过拟合' branches off. The board is green with gold-copper traces, silver solder joints, raised 3D components. Labels are readable Chinese silkscreen prints attached to components. The worker's LED has one amber dot (focus state). Palette: PCB green, copper gold, solder silver, signal amber (focal), growth cyan (flywheel), error red (overfitting). No flat schematic, no stock icons, no fake dense text, no cartoon eyes. Editorial, tactile, publish-grade.",
+  "qa_risks": [
+    "可能生成的中文标签模糊或不可读",
+    "飞轮loop可能不闭合",
+    "worker可能变成装饰而非执行编码动作"
+  ],
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-1-edd-feedback-loop.png"
+}

@@ -1,0 +1,52 @@
+{
+  "source_anchor": "FDE 简历五段式：业务背景→需求边界→方案选型→可验收结果→沉淀资产。每段回答一个问题：为什么做、做什么不做什么、怎么实现、怎么验收、留下了什么。",
+  "reader_takeaway": "FDE 的项目经历不是流水账，而是五段式自证体系",
+  "domain": "FDE 求职 / Career",
+  "mood": "professional, structured, confident",
+  "intent": {
+    "audience": "FDE 招聘方、技术负责人",
+    "feeling": "这个人懂工程——不是堆功能，是有边界、有验收、有资产沉淀",
+    "author_stance": "王十一主张 FDE 简历用五段式而非流水账，每段是自证信号",
+    "one_sentence": "五段式把项目经历从'做了什么'升级为'为什么做、怎么验收、留下了什么'"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["业务背景", "需求边界", "方案选型", "可验收结果", "沉淀资产", "FDE五段式"],
+    "outside_image": ["每段的具体案例和量化指标"]
+  },
+  "truth_constraints": [
+    "标签必须用中文",
+    "5个环节必须从左到右排列",
+    "LED颜色从绿色渐变到青色表示从探索到沉淀"
+  ],
+  "relationship": {
+    "type": "sequence/pipeline",
+    "direction": "left-to-right, 5 stages"
+  },
+  "worker": {
+    "family": "Router / 路由员",
+    "action": "routing signal from one stage to next",
+    "touch_point": "signal probe on trace between chips"
+  },
+  "metaphor_world": "mainboard with 5 chips in horizontal pipeline (fast channel standard)",
+  "channel": "fast",
+  "qa_risks": [
+    "5个中文标签可能部分丢失",
+    "worker可能装饰化",
+    "Swap Test: 必须用 'FDE五段式' nameplate 锁定到求职语境"
+  ],
+  "final_prompt": "A small soldering-cap robot with a round silver soldering-iron cap head, rectangular green PCB body, and tiny jointed arms is physically routing a signal from one chip to the next with one hand while holding a signal probe touching the copper trace between two chips. The robot is the main focal point, positioned at the center of the pipeline. The robot's LED has one focused amber dot.\n\nBelow the robot, a green mainboard has five chips arranged in a horizontal pipeline, connected by copper-gold traces flowing left to right. Each chip has a small LED with progressing colors: chip 1 green (discovery), chip 2 green (boundary), chip 3 amber (decision), chip 4 amber (verification), chip 5 cyan (asset). A small copper nameplate reads 'FDE五段式'.\n\nMandatory Chinese labels as readable silkscreen prints on each chip: '业务背景', '需求边界', '方案选型', '可验收结果', '沉淀资产'. All labels must be clearly visible and readable. The board surface is green solder-mask with gold-copper traces, silver solder joints, raised 3D components throughout. Tactile solder texture, copper sheen, clean editorial composition, generous margins. No flat schematic, no cartoon eyes, no humanoid face, no mascot sticker, no fake dense text, no stock PPT icons. Editorial, tactile, publish-grade, 16:9 horizontal.",
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-7-fde-resume-5step.png",
+  "auto_qa": {
+    "channel": "fast",
+    "qa_prompt": "VLM checks: worker_action, pcb_texture, chinese_labels (5 labels), focal_hierarchy, swap_test (locked to FDE context via nameplate), custom_check (5-chip left-to-right pipeline with LED color progression)",
+    "attempt_1": {
+      "result": "PASS",
+      "all_checks_passed": true,
+      "note": "Fast channel first-pass pass again — template structure proves reliable for 5-chip pipelines"
+    },
+    "final_verdict": "PASS"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "source_anchor": "诗经六义：风雅颂是内容分类（民歌→宫廷→宗庙），赋比兴是表现手法（直述→比喻→联想）。两组各三条，构成诗经的完整体系。",
+  "reader_takeaway": "诗经六义是内容三分（风雅颂）+ 手法三分（赋比兴）的双层结构",
+  "domain": "文化/文学 — 中国古典诗歌",
+  "mood": "clear, structured, cultural",
+  "intent": {
+    "audience": "文学爱好者、语文教师、传统文化读者",
+    "feeling": "诗经的体系性一目了然——内容与手法两条线并行",
+    "author_stance": "六义不是六个并列项，而是两个维度的交叉体系",
+    "one_sentence": "诗经的六义是内容分类（风雅颂）与表现手法（赋比兴）的双层结构"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["风", "雅", "颂", "赋", "比", "兴", "六义"],
+    "outside_image": ["六义的详细解释、具体诗篇举例"]
+  },
+  "truth_constraints": [
+    "标签必须用中文",
+    "风雅颂在左侧自下而上排列",
+    "赋比兴在右侧自下而上排列",
+    "六义铭牌在正中央"
+  ],
+  "relationship": {
+    "type": "parallel layers / 双层并行",
+    "direction": "bottom-to-top within each sub-board, inward to center across boards",
+    "what_breaks_if_removed": "去掉任一子板，六义的体系性就丢了"
+  },
+  "worker": {
+    "family": "Encoder",
+    "action": "encoding signals from two sub-boards into a central nameplate",
+    "what_breaks_if_removed": "去掉 worker，两组芯片之间的联系就断了",
+    "worker_family": "Encoder",
+    "worker_tool": "signal probe"
+  },
+  "metaphor_world": "cultural PCB — a civilization board with two sub-boards representing two dimensions of 诗经",
+  "composition_mode": "single-beat",
+  "primitives": ["Copper Trace", "Chip Stack", "Nameplate", "Solder Joint"],
+  "state_coding": {
+    "colors": ["PCB Green", "Copper Gold", "Signal Amber", "Solder Silver"],
+    "focal_accent": "Signal Amber",
+    "led_states": ["lit"]
+  },
+  "labels": [
+    { "text": "风", "attachment": "silkscreen on bottom-left chip" },
+    { "text": "雅", "attachment": "silkscreen on middle-left chip" },
+    { "text": "颂", "attachment": "silkscreen on top-left chip" },
+    { "text": "赋", "attachment": "silkscreen on bottom-right chip" },
+    { "text": "比", "attachment": "silkscreen on middle-right chip" },
+    { "text": "兴", "attachment": "silkscreen on top-right chip" },
+    { "text": "六义", "attachment": "engraved on central copper nameplate" }
+  ],
+  "final_prompt": "A small soldering-cap robot is actively routing copper traces on a green PCB, connecting two sub-boards to a central nameplate. The robot has a round silver cap head with a single small amber LED indicator, a tiny green PCB body, and small jointed arms. No eyes, no face, no humanoid expression. Its left hand holds a signal probe touching the left sub-board. Its right hand holds a signal probe touching the right sub-board. Both probes send copper traces converging at a copper nameplate in the center. The robot is actively working, NOT standing or leaning.\n\nThe PCB surface is green solder-mask with gold-copper traces, silver solder joints, and visible 3D depth. Two sub-boards sit side by side. The left sub-board has three chips in a vertical column. The right sub-board has three chips in a vertical column. Each chip is a small black rectangle with white silkscreen text. A copper trace connects the three chips within each sub-board, and a horizontal trace goes from each sub-board inward to the central nameplate.\n\nThe focal point is the central copper nameplate with warm amber accent. Quiet zones around the edges.\n\nA copper nameplate on the board reads '诗经六义'.\n\nMandatory Chinese labels, each silkscreen-printed on its chip:\n- 风 on the bottom-left chip\n- 雅 on the middle-left chip\n- 颂 on the top-left chip\n- 赋 on the bottom-right chip\n- 比 on the middle-right chip\n- 兴 on the top-right chip\n- 六义 on the central nameplate\n\nEach label appears ONLY ONCE. Do NOT render as background text.\n\nClean editorial composition, generous margins. No flat schematic, no cartoon eyes, no humanoid face, no mascot sticker, no fake dense text, no stock PPT icons. Editorial, tactile, publish-grade, 16:9 horizontal.",
+  "qa_risks": ["chinese_labels: all 7 labels visible and attached to components", "swap_test: image locked to 诗经六义 concept via nameplate"],
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-shijing-liuyi.png"
+}

@@ -1,0 +1,60 @@
+{
+  "source_anchor": "某企业Agent落地方法论六步链路：选准任务→说清任务→装备能力→稳定运行→业务价值→沉淀复用。第六步沉淀复用产生八大资产类型，形成飞轮效应",
+  "reader_takeaway": "企业Agent落地是一个六步链路，终点是资产沉淀形成飞轮",
+  "domain": "business / enterprise engineering",
+  "mood": "confident, systematic",
+  "intent": {
+    "audience": "企业决策者、AI落地方向负责人",
+    "feeling": "路径清晰、终点明确——不是一次性项目而是飞轮",
+    "author_stance": "该方法论强调落地的系统性和资产化思维",
+    "one_sentence": "六步链路从选场景到资产沉淀，飞轮效应是最终价值"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["选任务", "说清楚", "装备", "稳定运行", "业务价值", "沉淀复用", "飞轮"],
+    "outside_image": ["每步详细说明", "八大资产类型"]
+  },
+  "truth_constraints": [
+    "六步顺序必须从左到右",
+    "最后一步必须有飞轮回流到第一步的视觉表现",
+    "标签必须用中文"
+  ],
+  "relationship": {
+    "type": "sequence with feedback loop",
+    "direction": "left-to-right pipeline, then loop back from step 6 to step 1",
+    "focal_module": "第六步'沉淀复用'（飞轮起点）"
+  },
+  "core_action": "bridge（桥接：在第六步和第一步之间架设飞轮回路）",
+  "worker_decision": {
+    "use_worker": true,
+    "what_breaks_if_removed": "没有人架设飞轮回路，六步就变成一次性项目而非持续循环",
+    "worker_family": "Router / 走线工 (acting as bridge builder)",
+    "worker_tool": "solder bridge + copper carrier trace forming the loop"
+  },
+  "metaphor_world": "server rack with stacked boards, each board = one step",
+  "composition_mode": "single-beat, multi-stage with loop",
+  "primitives": ["Bus Bar (pipeline)", "Chip (each step)", "Solder Bridge (loop connection)", "Copper Trace (carrier, forms return path)"],
+  "state_coding": {
+    "colors": ["PCB Green (base)", "Copper Gold (traces)", "Power Green (steps 1-5)", "Growth Cyan (step 6 + flywheel, focal)"],
+    "focal_accent": "Growth Cyan on step 6 and flywheel trace",
+    "led_states": ["lit green (steps 1-5 active)", "flashing cyan (step 6 + flywheel)"]
+  },
+  "labels": [
+    { "text": "选任务", "attachment": "silkscreen on chip 1" },
+    { "text": "说清楚", "attachment": "silkscreen on chip 2" },
+    { "text": "装备", "attachment": "chip marking on chip 3" },
+    { "text": "稳定运行", "attachment": "pin label on chip 4" },
+    { "text": "业务价值", "attachment": "silkscreen on chip 5" },
+    { "text": "沉淀复用", "attachment": "status badge on chip 6" },
+    { "text": "飞轮", "attachment": "trace tag on return loop" }
+  ],
+  "final_prompt": "Generate one standalone 16:9 horizontal article illustration in the Circuit Workers style. A miniature PCB diorama seen from a high angle. The scene shows a six-stage pipeline on a green circuit board. From left to right: six raised chips connected by a copper bus bar. Chips 1-5 have lit green LEDs. Chip 6 labeled '沉淀复用' has a flashing cyan LED (the focal point — this is where assets accumulate). A copper carrier trace loops back from chip 6 to chip 1, glowing cyan, labeled '飞轮' — this is the flywheel return path. A small soldering-cap robot worker (round silver head, green PCB body, tiny arms) is physically building a solder bridge between chip 6 and the return trace — it holds a solder bridge tool, completing the loop. The worker's LED has one cyan dot (growth state). Chip labels from left to right: '选任务', '说清楚', '装备', '稳定运行', '业务价值', '沉淀复用'. The board has 3D depth: raised chips, gold-copper traces, silver solder joints, green solder mask. The cyan flywheel loop is visually prominent, curving from right side back to left. Labels are readable Chinese silkscreen prints. Palette: PCB green, copper gold, solder silver, power green (steps 1-5), growth cyan (step 6 + flywheel focal). No flat schematic, no stock icons, no fake dense text, no cartoon eyes. Editorial, tactile, publish-grade.",
+  "qa_risks": [
+    "六步顺序可能混乱",
+    "飞轮回路可能不闭合",
+    "worker可能不在第六步执行桥接动作"
+  ],
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-3-enterprise-flywheel.png"
+}

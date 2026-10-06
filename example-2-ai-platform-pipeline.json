@@ -1,0 +1,57 @@
+{
+  "source_anchor": "某AI平台 CLI 四层架构：Agentic框架 → CLI → 专家Skill → 场景产出。核心理念是'原子模型能力交给Agent编排'",
+  "reader_takeaway": "该平台的四层架构是一个从框架到产出的流水线，每层职责清晰",
+  "domain": "engineering / AI platform",
+  "mood": "confident, structural",
+  "intent": {
+    "audience": "AI平台使用者、开发者",
+    "feeling": "层次清晰、架构感强",
+    "author_stance": "该平台通过分层解耦实现灵活编排",
+    "one_sentence": "从Agentic框架到场景产出，四层架构各司其职"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["Agentic框架", "CLI", "专家Skill", "场景产出", "编排"],
+    "outside_image": ["每层详细说明"]
+  },
+  "truth_constraints": [
+    "四层顺序必须从左到右：框架→CLI→Skill→产出",
+    "标签必须用中文"
+  ],
+  "relationship": {
+    "type": "sequence / pipeline",
+    "direction": "left-to-right pipeline",
+    "focal_module": "CLI层（中间的桥梁）"
+  },
+  "core_action": "route（走线：把框架能力路由到场景产出）",
+  "worker_decision": {
+    "use_worker": true,
+    "what_breaks_if_removed": "没有人把上一层输出路由到下一层，流水线就断了",
+    "worker_family": "Router / 走线工",
+    "worker_tool": "copper carrier trace + solder bridge"
+  },
+  "metaphor_world": "mainboard with four pipeline stages connected by copper bus bars",
+  "composition_mode": "single-beat, multi-stage pipeline",
+  "primitives": ["Bus Bar (pipeline backbone)", "Chip (each layer)", "Copper Trace (routing)", "Solder Bridge (layer connection)"],
+  "state_coding": {
+    "colors": ["PCB Green (base)", "Copper Gold (traces/bus)", "Power Green (active stages)", "Signal Amber (focal: CLI bridge)"],
+    "focal_accent": "Signal Amber on CLI layer",
+    "led_states": ["lit green (all stages active)"]
+  },
+  "labels": [
+    { "text": "Agentic框架", "attachment": "silkscreen on first chip" },
+    { "text": "CLI", "attachment": "chip marking on second chip" },
+    { "text": "专家Skill", "attachment": "pin label on third chip" },
+    { "text": "场景产出", "attachment": "status badge on fourth chip" },
+    { "text": "编排", "attachment": "trace tag on bus bar" }
+  ],
+  "final_prompt": "Generate one standalone 16:9 horizontal article illustration in the Circuit Workers style. A miniature PCB diorama seen from a high angle. The scene shows a four-stage pipeline on a green circuit board. From left to right: four raised chips connected by a wide copper bus bar. First chip labeled 'Agentic框架' (lit green LED). Second chip labeled 'CLI' (lit amber LED, the focal point — this is the bridge layer). Third chip labeled '专家Skill' (lit green LED). Fourth chip labeled '场景产出' (lit green LED with a small output trace going off-board right). A copper carrier trace with direction arrows flows left-to-right connecting all four chips. A small soldering-cap robot worker (round silver head, green PCB body, tiny arms) is physically routing a copper trace between the CLI chip and the Skill chip — it holds a solder bridge tool, connecting the bus bar segments. The worker's LED has one amber dot (focus state). The bus bar has a silkscreen label '编排' on it. The board has 3D depth: raised chips, gold-copper traces, silver solder joints, green solder mask. Labels are readable Chinese silkscreen prints. Palette: PCB green, copper gold, solder silver, signal amber (focal on CLI), power green (other stages). No flat schematic, no stock icons, no fake dense text, no cartoon eyes. Editorial, tactile, publish-grade.",
+  "qa_risks": [
+    "四层顺序可能混乱",
+    "worker可能不在CLI和Skill之间执行路由动作",
+    "标签可能生成模糊"
+  ],
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-2-ai-platform-pipeline.png"
+}

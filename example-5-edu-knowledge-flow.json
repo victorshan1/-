@@ -1,0 +1,58 @@
+{
+  "source_anchor": "小语智研知识点流转六环节：备课→作业→分析→讲评→对比→导出。AI 教研工作台的核心壁垒是知识点流转机制，六环节闭环让知识从老师备课到学生导出全程流转。",
+  "reader_takeaway": "知识点在六环节闭环中流转，AI 贯穿每个环节",
+  "domain": "教育科技 / EdTech",
+  "mood": "clear, educational, encouraging",
+  "intent": {
+    "audience": "小学语文教师、教育科技产品经理",
+    "feeling": "原来六个环节是一个闭环，AI 在每个环节都有作用",
+    "author_stance": "小语智研主张 AI 教研不是单点工具，而是知识点流转闭环",
+    "one_sentence": "知识点从备课到导出，六环节闭环流转，AI 贯穿始终"
+  },
+  "asset_role": "article figure",
+  "container": "article body",
+  "ratio": "16:9",
+  "text_ownership": {
+    "inside_image": ["备课", "作业", "分析", "讲评", "对比", "导出"],
+    "outside_image": ["每个环节的 AI 功能详细说明"]
+  },
+  "truth_constraints": [
+    "标签必须用中文",
+    "6个环节必须从左到右排列",
+    "最后环节必须有回环 trace 连回第一个"
+  ],
+  "relationship": {
+    "type": "sequence + feedback / 流水线+回环",
+    "direction": "left-to-right with return trace"
+  },
+  "worker": {
+    "family": "Router / 路由员",
+    "action": "routing signal from one stage to next",
+    "touch_point": "signal probe on trace between chips"
+  },
+  "metaphor_world": "mainboard with 6-chip pipeline + cyan return trace (fast channel: closest standard metaphor)",
+  "channel": "fast",
+  "qa_risks": [
+    "6个中文标签可能只渲染部分（F3/F7 风险）",
+    "回环trace可能不闭合",
+    "worker可能装饰化"
+  ],
+  "final_prompt": "A small soldering-cap robot with a round silver soldering-iron cap head, rectangular green PCB body, and tiny jointed arms is physically routing a signal from one chip to the next with one hand while holding a signal probe touching the copper trace between two chips. The robot is the main focal point, positioned at the center of the pipeline. The robot's LED has one focused amber dot.\n\nBelow the robot, a green mainboard has six small chips arranged in a horizontal pipeline, connected by copper-gold traces flowing left to right. Each chip has a small LED: chips 1-2 have green LEDs, chips 3-4 have amber LEDs, chips 5-6 have cyan LEDs. A bright cyan-glowing return trace curves from the sixth chip back to the first, completing a loop. A small copper nameplate reads '知识点流转'.\n\nMandatory Chinese labels as readable silkscreen prints on each chip: '备课', '作业', '分析', '讲评', '对比', '导出'. All labels must be clearly visible and readable. The board surface is green solder-mask with gold-copper traces, silver solder joints, raised 3D components throughout. Tactile solder texture, copper sheen, clean editorial composition, generous margins. No flat schematic, no cartoon eyes, no humanoid face, no mascot sticker, no fake dense text, no stock PPT icons. Editorial, tactile, publish-grade, 16:9 horizontal.",
+  "output_path": "/home/z/my-project/skills/circuit-workers/assets/examples/example-5-edu-knowledge-flow.png",
+  "auto_qa": {
+    "channel": "fast",
+    "qa_prompt": "VLM checks: worker_action, pcb_texture, chinese_labels (6 labels), focal_hierarchy, swap_test (must be locked to education context via '知识点流转' nameplate), custom_check (return trace from chip 6 to chip 1)",
+    "attempt_1": {
+      "result": "FAIL",
+      "failing_checks": ["custom_check — no visible return trace from last chip to first"],
+      "passing_checks": ["worker_action", "pcb_texture", "chinese_labels", "focal_hierarchy", "swap_test"],
+      "adjustments": "Made return trace description more prominent: 'bright thick cyan-glowing return trace curves prominently from sixth chip on right back to first chip on left, clearly visible as curved glowing cyan line above chips'"
+    },
+    "attempt_2": {
+      "result": "PASS",
+      "all_checks_passed": true,
+      "note": "Template improvement: return trace needs to be described as 'bright thick' and 'clearly visible' — added to fast-channel.md template guidance"
+    },
+    "final_verdict": "PASS"
+  }
+}

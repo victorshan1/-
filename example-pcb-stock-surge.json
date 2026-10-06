@@ -1,0 +1,16 @@
+{
+  "source_anchor": "PCB概念股宝鼎科技走出5连板，近五日累计涨幅61.06%，总市值203亿元",
+  "intent": "用PCB电路工风格表现A股PCB概念股暴涨，宝鼎科技5连板为核心焦点，医药/电网/消费/AI四板块拱卫，CPO概念走弱",
+  "relationship": {
+    "type": "hierarchy",
+    "direction": "one-focal-point-with-satellites"
+  },
+  "metaphor_world": "A股交易盘面映射为PCB电路板：龙头股=高耸的主芯片，板块=卫星芯片，跌停=暗淡冷区",
+  "worker_decision": {
+    "worker_family": "booster",
+    "action": "pulling a thick golden copper trace upward to feed the central processor chip, boosting its power"
+  },
+  "cost_tier": "full",
+  "output_path": "/home/z/my-project/output/pcb-stock-surge.png",
+  "final_prompt": "A small soldering-cap robot is pulling a thick golden copper trace upward with visible effort, routing it into the base of a tall glowing processor chip on a green PCB. The robot has a round silver cap head with a single bright amber LED, a tiny green PCB body, and small jointed arms gripping a thick copper cable pulled taut upward. No eyes, no face, no humanoid body. The PCB has deep 3D depth: raised chips with visible solder joints, gold-copper traces with metallic sheen on green solder-mask, dramatic upward energy flow.\n\nThe central processor chip is tall and prominent, like a towering skyscraper on the PCB, with 5 ascending amber LED bars on its front face like a rising staircase, each bar glowing brighter than the one below. The chip radiates warm amber light, creating a clear single focal point. Around this central tower, 4 smaller satellite chips sit in a quarter-circle arrangement, each connected by its own thin copper trace back to the central processor. The first satellite is a chip with a small red medical cross marking. The second is a chip shaped like a miniature power-grid transmission tower. The third is a chip with a tiny shopping cart relief. The fourth is a chip with a glowing brain-circuit pattern. All satellite chips are lit but dimmer than the central tower.\n\nOn the far left edge of the PCB, a cluster of dark optical transceiver chips sits cold and unlit, with a cracked and severed copper trace leading to them, representing a falling zone. A polished copper nameplate is mounted on the PCB base in front of the central tower, engraved with clear silkscreen text reading PCB概念5连板. The overall scene is a high-angle shot of the entire PCB diorama, 16:9 horizontal, with rich PCB green, copper-gold, solder-silver, and signal-amber as dominant colors, the central tower glowing with warm amber light as the only focal point, surrounded by darker quiet green areas.\n\nMandatory Chinese labels: 宝鼎科技 on the tall central processor, 5连板 as a small amber badge on its side, 医药 on the red-cross chip, 电网 on the power-tower chip, 消费 on the shopping-cart chip, AI应用 on the brain chip, PCB概念 on the nameplate. Each label appears ONLY ONCE. Do NOT render as background text."
+}
